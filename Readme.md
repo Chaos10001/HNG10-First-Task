@@ -1,29 +1,38 @@
-###Stage One
+###
+Stage One
 
-##Task: Frontend Page Creation with Specific Elements
+##
+Task: Frontend Page Creation with Specific Elements
 
-O#bjective: Develop and host a web page using HTML and CSS that showcases specific personal and real-time data attributes. Each required element should have a specified data-testid attribute for easy identification and testing.
+##
+Objective: Develop and host a web page using HTML and CSS that showcases specific personal and real-time data attributes. Each required element should have a specified data-testid attribute for easy identification and testing.
 
-##Requirements:
+##
+Requirements:
 
-#Slack Name:
+#
+Slack Name:
  Display your Slack name prominently.
  Attribute: data-testid="slackUserName"
 
-#Slack Display Picture:
+#
+Slack Display Picture:
  Showcase your Slack profile picture.
  The image's alt attribute should be your Slack username.
  Attribute: data-testid="slackDisplayImage"
 
-#Current Day of the Week:
+#
+Current Day of the Week:
  Indicate the current day of the week (e.g., Monday, Tuesday).
  Attribute: data-testid="currentDayOfTheWeek"
 
-#Current UTC Time:
+#
+Current UTC Time:
  Display the current UTC time in milliseconds.
  Attribute: data-testid="currentUTCTime"
 
-#Track:
+#
+Track:
  Mention your track (e.g Frontend).
  Attribute: data-testid="myTrack"
  
