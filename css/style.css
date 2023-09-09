@@ -1,0 +1,16 @@
+body {
+	font-family: monospace;
+	text-align: center;
+}
+.profile-image {
+	border-radius: 50%;
+	max-width: 200px;
+	margin-top: 3rem;
+}
+.box {
+	margin-top: 3rem;
+	margin-left: 29rem;
+	height: 41rem;
+	width: 35rem;
+	box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}

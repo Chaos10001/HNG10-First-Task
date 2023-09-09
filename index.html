@@ -3,64 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css"/>
     <title>HNG TASK </title>
   </head>
   <body>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-      }
-      .profile-image {
-        border-radius: 50%;
-        max-width: 200px;
-      }
-    </style>
+    <div class="box">
+      <div class="box-m">
+          <h1>HNG Profile </h1>
 
-    <h1>HNG Profile </h1>
+          <h2 data-testid="slackUserName">Slack UserName: Gabriel Femi</h2>
+          <img
+            src="./img/hng-img.png"
+            alt="Gabriel Femi"
+            class="profile-image"
+            data-testid="slackDisplayImage"
+          />
 
-    <h2 data-testid="slackUserName">Slack UserName: Gabriel Femi</h2>
-    <img
-      src="./img/hng-img.png"
-      alt="Gabriel Femi"
-      class="profile-image"
-      data-testid="slackDisplayImage"
-    />
+          <h2>Today is <span data-testid="currentDayOfTheWeek"></span></h2>
 
-    <h2>Today is <span data-testid="currentDayOfTheWeek"></span></h2>
+          <h2>
+            Current UTC Time:
+            <span data-testid="currentUTCTime"></span>
+          </h2>
 
-    <p>
-      Current UTC Time:
-      <span data-testid="currentUTCTime"></span> milliseconds
-    </p>
+          <p data-testid="myTrack">Frontend</p>
 
-    <p data-testid="myTrack">Frontend</p>
+          <h3>
+            GitHub Repository:
+            <a
+              href="https://github.com/Chaos10001/HNG10-First-Task"
+              data-testid="githubURL"
+              target="_blank"
+              >Github Url</a
+            >
+          </h3>
+      </div>
+    </div>
 
-    <h3>
-      GitHub Repository:
-      <a
-        href="https://github.com/Chaos10001/HNG10-First-Task"
-        data-testid="githubURL"
-        target="_blank"
-        >Github Url</a
-      >
-    </h3>
+    <script src="./Js/script.js"></script>
 
-    <script>
-      function updateDateTime() {
-        const dayOfWeek = new Date().toLocaleDateString("en-US", {
-          weekday: "long",
-        });
-        const utcTime = new Date().toUTCString();
-
-        document.querySelector(
-          '[data-testid="currentDayOfTheWeek"]'
-        ).textContent = dayOfWeek;
-        document.querySelector('[data-testid="currentUTCTime"]').textContent =
-          utcTime;
-      }
-
-      setInterval(updateDateTime, 1000);
-    </script>
   </body>
 </html>
